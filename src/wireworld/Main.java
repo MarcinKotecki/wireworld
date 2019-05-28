@@ -1,11 +1,13 @@
 package wireworld;
 
+import wireworld.gui.Const;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        new Manager();
+        new Const();
+        Manager.init();
 
     }
 }
