@@ -4,6 +4,15 @@
     <list default="true" id="aa75d097-36ce-4c21-ad5a-b72e52ce453b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wireworld/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/MyButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/MyButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/MyCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/MyLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/MyLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/MyTextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/MyTextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/logic/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/logic/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wireworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wireworld.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wireworld/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/wireworld/gui/Const.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-133">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -30,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wireworld/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="168">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -56,8 +74,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="74" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="417" />
+    <option name="y" value="89" />
     <option name="width" value="910" />
     <option name="height" value="494" />
   </component>
@@ -67,8 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -105,6 +122,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,26 +172,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="742" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="742" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.16163142" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16540785" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32854864" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.54353565" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Run" order="5" weight="0.32854864" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.32695374" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
@@ -191,13 +211,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/MyPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/MyPanel.java" />
     <entry file="file://$PROJECT_DIR$/src/wireworld/gui/MyLabel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -219,32 +233,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/PatternsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/PatternsPanelElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/PatternsPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/PatternsPanelElement.java" />
     <entry file="file://$PROJECT_DIR$/src/wireworld/gui/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6643">
@@ -255,17 +245,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wireworld/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/wireworld/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wireworld/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wireworld/gui/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>

@@ -1,61 +1,80 @@
 package wireworld.gui;
 
+import wireworld.Manager;
 import wireworld.logic.Grid;
+import wireworld.threads.MoveGridThread;
+import wireworld.threads.PaintThread;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
 
 public class MyCanvas extends JPanel {
 
-    Grid currentGrid;
-    BufferedImage currentFrame;
+    private Grid currentGrid;
+    private BufferedImage currentFrame;
     private int offsetX = 0;
     private int offsetY = 0;
-    int lastx = 0, lasty = 0;
-    int scale = 4;
-    boolean mousePressed = false;
+    private int scale = 4;
     private MoveGridThread mgt;
+    private PaintThread pt;
+    private int mouseMode = 0;
+    private int whatToDraw = 0;
 
-    public MyCanvas() {
+    MyCanvas() {
         super();
+        setLayout(null);
         mgt = new MoveGridThread(this);
-        addMouseWheelListener(new MouseWheelListener() {
-            @Override
-            public void mouseWheelMoved(MouseWheelEvent mouseWheelEvent) {
-                scale -= mouseWheelEvent.getWheelRotation();
-                if (scale < 1) scale = 1;
-                update();
-            }
+        pt = new PaintThread(this);
+        addMouseWheelListener(mouseWheelEvent -> {
+            scale -= mouseWheelEvent.getWheelRotation();
+            if (scale < 1) scale = 1;
+            update();
         });
 
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent mouseEvent) {
                 super.mousePressed(mouseEvent);
-                mgt.start();
-                /*
-                mousePressed = true;
-                lastx = mouseEvent.getX();
-                lasty = mouseEvent.getY();
-                 */
+                if (mouseMode == 0) {
+                    mgt.start();
+                } else if (mouseMode == 1) {
+                    pt.start();
+                }
             }
 
             @Override
             public void mouseReleased(MouseEvent mouseEvent) {
                 super.mouseReleased(mouseEvent);
-                mgt.stop();
-                /*
-                mousePressed = false;
-                offsetX -= lastx - mouseEvent.getX();
-                offsetY -= lasty - mouseEvent.getY();
-                update();
-                 */
+                if (mouseMode == 0) {
+                    mgt.stop();
+                } else if (mouseMode == 1) {
+                    pt.stop();
+                }
             }
+
+            /*
+            @Override
+            public void mouseClicked(MouseEvent mouseEvent) {
+                super.mouseClicked(mouseEvent);
+                if (mouseMode == 0) {
+                    return;
+                }
+                int x = mouseEvent.getX() - (getWidth() / 2 - currentFrame.getWidth() * scale / 2 + offsetX);
+                if (x < 0) return;
+                x /= scale;
+                if (x >= currentGrid.getWidth()) return;
+                int y = mouseEvent.getY() - (getHeight() / 2 - currentFrame.getHeight() * scale / 2 + offsetY);
+                if (y < 0) return;
+                y /= scale;
+                if (y >= currentGrid.getHeight()) return;
+                currentGrid.changeCell(x, y, whatToDraw);
+                update();
+            }
+             */
+
         });
         setDoubleBuffered(true);
     }
@@ -64,26 +83,36 @@ public class MyCanvas extends JPanel {
         update(currentGrid);
     }
 
-    public void update(Grid grid) {
-        if (grid.getWidth() <= 0 | grid.getHeight() <= 0) return;
+    void update(Grid grid) {
+        if (grid == null || grid.getWidth() <= 0 || grid.getHeight() <= 0) return;
         currentGrid = grid;
         BufferedImage img = new BufferedImage(grid.getWidth(), grid.getHeight(), BufferedImage.TYPE_INT_RGB);
-        int p;
         for (int x = 0; x < grid.getWidth(); x++)
             for (int y = 0; y < grid.getHeight(); y++) {
-                switch (grid.getCell(x, y)) {
-                    case 0:
-                        img.setRGB(x, y, Color.WHITE.getRGB());
-                        break;
-                    case 1:
-                        img.setRGB(x, y, Color.ORANGE.getRGB());
-                        break;
-                    case 2:
-                        img.setRGB(x, y, Color.BLUE.getRGB());
-                        break;
-                    case 3:
-                        img.setRGB(x, y, Color.BLACK.getRGB());
-                        break;
+                if (Manager.getInstance().getMode() == 0) {
+                    switch (grid.getCell(x, y)) {
+                        case 0:
+                            img.setRGB(x, y, Color.WHITE.getRGB());
+                            break;
+                        case 1:
+                            img.setRGB(x, y, Color.ORANGE.getRGB());
+                            break;
+                        case 2:
+                            img.setRGB(x, y, Color.BLUE.getRGB());
+                            break;
+                        case 3:
+                            img.setRGB(x, y, Color.BLACK.getRGB());
+                            break;
+                    }
+                } else if (Manager.getInstance().getMode() == 1) {
+                    switch (grid.getCell(x, y)) {
+                        case 0:
+                            img.setRGB(x, y, Color.BLACK.getRGB());
+                            break;
+                        case 1:
+                            img.setRGB(x, y, Color.WHITE.getRGB());
+                            break;
+                    }
                 }
             }
         currentFrame = img;
@@ -104,11 +133,7 @@ public class MyCanvas extends JPanel {
         Toolkit.getDefaultToolkit().sync();
     }
 
-    public void setScale(int s) {
-        scale = s;
-    }
-
-    public void setOffsetX(int x ) {
+    public void setOffsetX(int x) {
         offsetX = x;
     }
 
@@ -123,4 +148,33 @@ public class MyCanvas extends JPanel {
     public int getOffsetY() {
         return offsetY;
     }
+
+    void setMouseMode(int i) {
+        mouseMode = i;
+    }
+
+    void setWhatToDraw(int i) {
+        whatToDraw = i;
+    }
+
+    int getMouseMode() {
+        return mouseMode;
+    }
+
+    public int getWhatToDraw() {
+        return whatToDraw;
+    }
+
+    public BufferedImage getCurrentFrame() {
+        return currentFrame;
+    }
+
+    public int getScale() {
+        return scale;
+    }
+
+    public Grid getCurrentGrid() {
+        return currentGrid;
+    }
+
 }
