@@ -3,9 +3,9 @@ package wireworld;
 import wireworld.gui.Const;
 import wireworld.gui.GUI;
 import wireworld.gui.MyNotification;
-import wireworld.threads.MyNotificationThread;
 import wireworld.logic.Grid;
 import wireworld.logic.GridList;
+import wireworld.threads.MyNotificationThread;
 import wireworld.threads.PlayThread;
 
 import java.util.ArrayList;
