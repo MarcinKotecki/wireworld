@@ -103,7 +103,7 @@ public class MyCanvas extends JPanel {
     void update(Grid grid) {
         if (grid == null || grid.getWidth() <= 0 || grid.getHeight() <= 0) return;
         currentGrid = grid;
-        currentFrame = currentGrid.getImage();
+        currentFrame = Utils.getImage(grid);
         repaint();
     }
 

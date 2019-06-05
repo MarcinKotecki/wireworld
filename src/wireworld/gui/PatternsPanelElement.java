@@ -23,7 +23,7 @@ public class PatternsPanelElement extends JPanel {
         label.setBounds(0, 120, 140, 20);
         add(label);
         this.grid = grid;
-        this.img = grid.getImage();
+        this.img = Utils.getImage(grid);
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent mouseEvent) {
