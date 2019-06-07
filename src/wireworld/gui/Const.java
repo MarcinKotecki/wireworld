@@ -1,7 +1,9 @@
 package wireworld.gui;
 
+import wireworld.logic.GameOfLife;
 import wireworld.logic.Grid;
 import wireworld.logic.GridList;
+import wireworld.logic.Wireworld;
 
 import java.awt.*;
 import java.io.IOException;
@@ -32,16 +34,16 @@ public class Const {
         }
         wireworldPatterns = new ArrayList<>();
         gameOfLifePatterns = new ArrayList<>();
-        Grid g = new Grid("/wireGateAND", "AND gate");
+        Grid g = new Wireworld("/wireGateAND", "AND gate");
         if (g.isGood())
             wireworldPatterns.add(g);
-        g = new Grid("/wireGateOR", "OR gate");
+        g = new Wireworld("/wireGateOR", "OR gate");
         if (g.isGood())
             wireworldPatterns.add(g);
-        g = new Grid("/wireGateXOR", "XOR gate");
+        g = new Wireworld("/wireGateXOR", "XOR gate");
         if (g.isGood())
             wireworldPatterns.add(g);
-        g = new Grid("/gameOfLifeGlider", "Glider");
+        g = new GameOfLife("/gameOfLifeGlider", "Glider");
         if (g.isGood())
             gameOfLifePatterns.add(g);
     }

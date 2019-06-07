@@ -3,8 +3,10 @@ package wireworld;
 import wireworld.gui.Const;
 import wireworld.gui.GUI;
 import wireworld.gui.MyNotification;
+import wireworld.logic.GameOfLife;
 import wireworld.logic.Grid;
 import wireworld.logic.GridList;
+import wireworld.logic.Wireworld;
 import wireworld.threads.MyNotificationThread;
 import wireworld.threads.PlayThread;
 
@@ -66,7 +68,11 @@ public class Manager {
     }
 
     public void loadGrid(String path) {
-        Grid g = new Grid(path);
+        Grid g = null;
+        if (mode == 0)
+            g = new Wireworld(path);
+        else
+            g = new GameOfLife(path);
         if (!g.isGood()) return;
         grids = new GridList();
         grids.add(g);
@@ -87,7 +93,11 @@ public class Manager {
             w = Integer.parseInt(ww);
             h = Integer.parseInt(hh);
             if (w > 0 && h > 0) {
-                Grid g = new Grid(w, h);
+                Grid g = null;
+                if (mode == 0)
+                    g = new Wireworld(w, h);
+                else
+                    g = new GameOfLife(w, h);
                 grids = new GridList();
                 grids.add(g);
                 updateCanvas();
@@ -126,11 +136,15 @@ public class Manager {
         if (mode == 0) {
             patterns = Const.wireworldPatterns;
             updatePatternsPanel();
-        } else if(mode == 1) {
+        } else if (mode == 1) {
             patterns = Const.gameOfLifePatterns;
             updatePatternsPanel();
         }
-        Grid g = new Grid(16, 16);
+        Grid g = null;
+        if (mode == 0)
+            g = new Wireworld(16, 16);
+        else
+            g = new GameOfLife(16, 16);
         grids = new GridList();
         grids.add(g);
         updateCanvas();
