@@ -25,7 +25,7 @@ public class PaintThread implements Runnable {
                 if (y < 0) return;
                 y /= c.getScale();
                 if (y >= c.getCurrentGrid().getHeight()) return;
-                c.getCurrentGrid().changeCell(x, y, c.getWhatToDraw());
+                c.getCurrentGrid().setCell(x, y, c.getWhatToDraw());
                 c.update();
             } catch (InterruptedException e) {
                 e.printStackTrace();

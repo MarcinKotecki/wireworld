@@ -80,7 +80,7 @@ public class MyCanvas extends JPanel {
                 for (int xx = 0; xx < patternToDraw.getWidth(); xx++) {
                     for (int yy = 0; yy < patternToDraw.getHeight(); yy++) {
                         try {
-                            currentGrid.changeCell(x + xx, y + yy, patternToDraw.getCell(xx, yy));
+                            currentGrid.setCell(x + xx, y + yy, patternToDraw.getCell(xx, yy));
                         } catch (ArrayIndexOutOfBoundsException e) {
                             fail = true;
                         }

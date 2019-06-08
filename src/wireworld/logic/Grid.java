@@ -44,7 +44,6 @@ public class Grid implements CellularAutomata {
         try {
             Scanner in = new Scanner(f);
             width = in.nextInt();
-            System.out.println(width);
             height = in.nextInt();
             cells = new int[width][height];
             for (int y = 0; y < height; y++)
@@ -120,10 +119,6 @@ public class Grid implements CellularAutomata {
 
     public boolean isGood() {
         return isGood;
-    }
-
-    public void changeCell(int x, int y, int state) {
-        cells[x][y] = state;
     }
 
     public void resize(int n, int e, int s, int w) {
