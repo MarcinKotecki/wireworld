@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa75d097-36ce-4c21-ad5a-b72e52ce453b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/wireworld/tests/GridTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wireworld/wireworld/gui/MyCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wireworld/wireworld/gui/MyCanvas$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wireworld/wireworld/logic/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wireworld/wireworld/logic/Grid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wireworld/wireworld/threads/PaintThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wireworld/wireworld/threads/PaintThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/MyCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/MyCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wireworld/logic/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/logic/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wireworld/threads/PaintThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/threads/PaintThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wireworld.iml" afterDir="false" />
-    </list>
+    <list default="true" id="aa75d097-36ce-4c21-ad5a-b72e52ce453b" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wireworld/tests/GridTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+            <state relative-caret-position="62">
+              <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -288,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.wireworld.tests in wireworld">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wireworld.Main" />
       <module name="wireworld" />
@@ -365,11 +355,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.wireworld.tests in wireworld" />
         <item itemvalue="JUnit.GridTest.gridTest1" />
         <item itemvalue="JUnit.GridTest.nextGenTest2" />
         <item itemvalue="JUnit.GridTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -409,18 +399,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GridTest - 2019.06.08 at 09h 05m 57s.xml">
-      <configuration name="GridTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 06m 03s.xml">
-      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 06m 43s.xml">
-      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 06m 55s.xml">
-      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GridTest - 2019.06.08 at 09h 09m 07s.xml">
       <configuration name="GridTest" configurationId="JUnit" />
     </history-entry>
@@ -439,10 +417,21 @@
     <history-entry file="GridTest_gridTest1 - 2019.06.08 at 09h 16m 45s.xml">
       <configuration name="GridTest.gridTest1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 17m 04s.xml">
+      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 17m 50s.xml">
+      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 18m 30s.xml">
+      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="wireworld_tests_in_wireworld - 2019.06.08 at 09h 19m 19s.xml">
+      <configuration name="wireworld.tests in wireworld" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="740" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
@@ -452,11 +441,11 @@
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20619336" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.2" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.2" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.328" />
+      <window_info anchor="bottom" id="Run" order="5" weight="0.328" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -689,8 +678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wireworld/tests/GridTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="67" column="41" lean-forward="true" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        <state relative-caret-position="62">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
