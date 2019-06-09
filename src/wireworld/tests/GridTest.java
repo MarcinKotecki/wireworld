@@ -5,7 +5,8 @@ import wireworld.logic.GameOfLife;
 import wireworld.logic.Grid;
 import wireworld.logic.Wireworld;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 class GridTest {
 
