@@ -19,51 +19,42 @@ public class Grid implements CellularAutomata {
     }
 
     public Grid(String path) {
-        load(new File(path));
+        try {
+            load(new Scanner(new File(path)),path);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public Grid(String path, String name) {
-        File f = null;
-        try {
-            f = new File(this.getClass().getResource(path).getFile());
-        } catch (NullPointerException e) {
-            isGood = false;
-            return;
-        }
-        load(f);
         this.name = name;
+        load(new Scanner(this.getClass().getResourceAsStream(path)),path);
     }
 
-    public void load(File f) {
+    public void load(Scanner in,String path) {
         int mode;
         try {
             mode = Manager.getInstance().getMode();
         } catch (NullPointerException e) {
             mode = -1;
         }
-        try {
-            Scanner in = new Scanner(f);
-            width = in.nextInt();
-            height = in.nextInt();
-            cells = new int[width][height];
-            for (int y = 0; y < height; y++)
-                for (int x = 0; x < width; x++) {
-                    cells[x][y] = in.nextInt();
-                    if (mode == 1 && !(cells[x][y] == 0 || cells[x][y] == 1)) {
-                        Manager.getInstance().notify("Wrong file format.", 6);
-                        return;
-                    } else if (mode == 0 && !(cells[x][y] == 0 || cells[x][y] == 1 || cells[x][y] == 2 || cells[x][y] == 3)) {
-                        Manager.getInstance().notify("Wrong file format.", 6);
-                        return;
-                    }
+        width = in.nextInt();
+        height = in.nextInt();
+        cells = new int[width][height];
+        for (int y = 0; y < height; y++)
+            for (int x = 0; x < width; x++) {
+                cells[x][y] = in.nextInt();
+                if (mode == 1 && !(cells[x][y] == 0 || cells[x][y] == 1)) {
+                    Manager.getInstance().notify("Wrong file format.", 6);
+                    return;
+                } else if (mode == 0 && !(cells[x][y] == 0 || cells[x][y] == 1 || cells[x][y] == 2 || cells[x][y] == 3)) {
+                    Manager.getInstance().notify("Wrong file format.", 6);
+                    return;
                 }
-            isGood = true;
-            if (mode != -1)
-                Manager.getInstance().notify("Succesfuly loaded file " + f.getAbsolutePath(), 5);
-        } catch (FileNotFoundException e) {
-            if (mode != -1)
-                Manager.getInstance().notify("Couldn't find file " + f.getAbsolutePath(), 5);
-        }
+            }
+        isGood = true;
+        if (mode != -1)
+            Manager.getInstance().notify("Succesfuly loaded file " + path, 5);
     }
 
     public void save(String path) {

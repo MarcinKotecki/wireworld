@@ -7,12 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa75d097-36ce-4c21-ad5a-b72e52ce453b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/wireworld_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wireworld/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wireworld/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/wireworld/wireworld/tests/GridTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/wireworld/wireworld/tests/GridTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wireworld/tests/GridTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/tests/GridTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wireworld.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wireworld.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/gui/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/gui/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wireworld/logic/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/wireworld/logic/Grid.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,10 +26,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wireworld/gui/Const.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state relative-caret-position="591">
+              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
                 <element signature="e#729#730#0" expanded="true" />
               </folding>
             </state>
@@ -42,16 +40,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wireworld/logic/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
+            <state relative-caret-position="236">
+              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2790#2791#0" expanded="true" />
                 <element signature="e#2818#2819#0" expanded="true" />
+                <element signature="e#2848#2849#0" expanded="true" />
                 <element signature="e#2877#2878#0" expanded="true" />
+                <element signature="e#2917#2918#0" expanded="true" />
                 <element signature="e#2951#2952#0" expanded="true" />
+                <element signature="e#2980#2981#0" expanded="true" />
                 <element signature="e#3007#3008#0" expanded="true" />
+                <element signature="e#3812#3813#0" expanded="true" />
                 <element signature="e#3841#3842#0" expanded="true" />
+                <element signature="e#4383#4384#0" expanded="true" />
                 <element signature="e#4410#4411#0" expanded="true" />
+                <element signature="e#4459#4460#0" expanded="true" />
                 <element signature="e#4490#4491#0" expanded="true" />
               </folding>
             </state>
@@ -109,8 +114,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="740" />
+    <option name="x" value="489" />
+    <option name="y" value="12" />
+    <option name="width" value="576" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -121,7 +128,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,6 +183,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,10 +390,10 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19410875" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20015106" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.4768" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.1264" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
@@ -615,10 +622,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wireworld/gui/Const.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="591">
+          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
             <element signature="e#729#730#0" expanded="true" />
           </folding>
         </state>
@@ -626,16 +634,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wireworld/logic/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
+        <state relative-caret-position="236">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
             <element signature="e#2818#2819#0" expanded="true" />
+            <element signature="e#2848#2849#0" expanded="true" />
             <element signature="e#2877#2878#0" expanded="true" />
+            <element signature="e#2917#2918#0" expanded="true" />
             <element signature="e#2951#2952#0" expanded="true" />
+            <element signature="e#2980#2981#0" expanded="true" />
             <element signature="e#3007#3008#0" expanded="true" />
+            <element signature="e#3812#3813#0" expanded="true" />
             <element signature="e#3841#3842#0" expanded="true" />
+            <element signature="e#4383#4384#0" expanded="true" />
             <element signature="e#4410#4411#0" expanded="true" />
+            <element signature="e#4459#4460#0" expanded="true" />
             <element signature="e#4490#4491#0" expanded="true" />
           </folding>
         </state>
